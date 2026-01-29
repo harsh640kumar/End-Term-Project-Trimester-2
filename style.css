@@ -1,0 +1,106 @@
+* {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .task-input {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .task-input input, .task-input select {
+      padding: 10px;
+      flex: 1;
+    }
+
+    .task-input button {
+      padding: 10px 15px;
+      cursor: pointer;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      background: #ecf0f1;
+    }
+
+    li.completed {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+
+    .priority-high { border-left: 5px solid red; }
+    .priority-medium { border-left: 5px solid orange; }
+    .priority-low { border-left: 5px solid green; }
+
+    button.small {
+      margin-left: 5px;
+      padding: 5px 8px;
+      cursor: pointer;
+    }
+
+    .progress-container {
+      margin-top: 30px;
+    }
+
+    .progress-bar {
+      height: 20px;
+      width: 100%;
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: #2ecc71;
+      transition: width 0.3s;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #555;
+    }
